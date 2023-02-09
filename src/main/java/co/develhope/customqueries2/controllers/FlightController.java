@@ -43,7 +43,7 @@ public class FlightController {
         return ResponseEntity.ok("Flights provisioned");
     }
 
-    @GetMapping
+    @GetMapping("")
     public ResponseEntity<Page<Flight>> getAllFlights(Pageable pageable) {
         return ResponseEntity.ok(flightRepository.findAll(pageable));
     }
