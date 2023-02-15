@@ -60,5 +60,4 @@ public class FlightController {
                                                            @RequestParam("p2") FlightStatus p2) {
         return ResponseEntity.ok(flightRepository.findByStatusIn(Arrays.asList(p1, p2)));
     }
-
 }
